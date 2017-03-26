@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "Permitir videos a pantalla completa en notengotele",
+    "description": "Esta extensioón permite reproducir video de notengotele a pantalla completa, ya que han deshabilitado esta opción por defecto en la página.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.notengotele.com/*",
+                "*://notengotele.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
