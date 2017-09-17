@@ -1,1 +1,1 @@
-This is your Chrome extension that allows full screen videos in notengotele.com. 
+This is a Chrome extension that removes search results with range prices on ebay.com. 
