@@ -1,9 +1,12 @@
-var elements = document.getElementsByTagName('iframe');
+var elements = document.getElementsByClassName('sresult');
 
 for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
 
-    element.setAttribute("allowfullscreen", "");
+    priceRange = element.getElementsByClassName('prRange');
+    
+    if (priceRange.length > 0)
+        element.style.display = 'none';
 }
 
 

@@ -1,13 +1,13 @@
 {
-"manifest_version": 2,
-    "name": "Permitir videos a pantalla completa en notengotele",
-    "description": "Esta extensioón permite reproducir video de notengotele a pantalla completa, ya que han deshabilitado esta opción por defecto en la página.",
+"manifest_version": 12,
+    "name": "Remove range-price results from searchs",
+    "description": "Many ebay sellers put range prices to their advertises to appear first in the search results ordered by price. These results are mostly useless because the real price is higher, so this extension removes all these articles from the search result.",
     "version": "1.0",
     "content_scripts": [
         {
             "matches": [
-                "*://www.notengotele.com/*",
-                "*://notengotele.com/*"
+                "*://ebay.com/sch/*",
+                "*://www.ebay.com/sch/*"
             ],
             "js": [
                 "content.js"
