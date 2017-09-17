@@ -1,5 +1,5 @@
 {
-"manifest_version": 12,
+"manifest_version": 1,
     "name": "Remove range-price results from searchs",
     "description": "Many ebay sellers put range prices to their advertises to appear first in the search results ordered by price. These results are mostly useless because the real price is higher, so this extension removes all these articles from the search result.",
     "version": "1.0",
@@ -14,5 +14,16 @@
             ],
             "run_at": "document_end"
         }
-    ]
+    ],
+    "permissions": [
+        "storage"
+     ],
+    "browser_action": {
+        "default_title": "Ebay range remover.",
+        "default_popup": "popup.html"
+    },
+        "background": {
+        "page": "popup.html"
+    },
+    "manifest_version": 2
 }
